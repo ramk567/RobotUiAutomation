@@ -1,0 +1,44 @@
+dev:
+  base_url: "staging2.nimblethis.net"
+  browser: "chrome"
+  timeout: 10
+  headless: false
+  database:
+    host: "dev-db.example.com"
+    port: 5432
+    username: "dev_user"
+    password: "dev_pass"
+    database: "dev_db"
+  api:
+    base_url: "https://api-dev.example.com"
+    timeout: 30
+
+staging:
+  base_url: "https://staging.example.com"
+  browser: "chrome"
+  timeout: 15
+  headless: false
+  database:
+    host: "staging-db.example.com"
+    port: 5432
+    username: "staging_user"
+    password: "staging_pass"
+    database: "staging_db"
+  api:
+    base_url: "https://api-staging.example.com"
+    timeout: 30
+
+prod:
+  base_url: "https://prod.example.com"
+  browser: "chrome"
+  timeout: 20
+  headless: true
+  database:
+    host: "prod-db.example.com"
+    port: 5432
+    username: "prod_user"
+    password: "prod_pass"
+    database: "prod_db"
+  api:
+    base_url: "https://api.example.com"
+    timeout: 30
